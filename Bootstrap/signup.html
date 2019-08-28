@@ -1,0 +1,499 @@
+<html class="gr__localhost">
+<head>
+  <title>signup</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+<link type="text/css" rel="stylesheet" href="style.css">    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 
+    <script src="jquery.min.js"></script>
+    
+<style>
+
+ 
+ 
+</style>
+    
+    
+      
+    
+</head><body class="w3-light-grey" data-gr-c-s-loaded="true">
+ 
+<!-- Navigation bar with social media icons -->
+
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+ 
+  <!-- Header -->
+  
+  
+  <!-- Image header -->
+ 
+ 
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+ 
+    <!-- Blog entries -->
+    <div class="w3-col l12 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        
+          <h2 style="text-align: center" ;=""> Personal Information </h2>
+          <br>
+          <div class="select-boxes">
+    
+  <div class="container">
+<div class="col-lg-9">
+	        <br>
+  
+ 
+ 
+<br>
+ 
+ 
+  <form class="form-horizontal" action="signup.php" method="POST"  id="reg_form">
+    <fieldset>
+      
+      <!-- Form Name -->
+      <legend> Personal Information </legend>
+    
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">First Name</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label" >Last Name</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+
+      <!--GENDER-->
+      <div class="form-group">
+              <label class="col-md-4 control-label">Gender</label>
+              <div class="col-md-6 selectContainer">
+                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                  <select name="gender" class="form-control selectpicker" >
+                    <option value=" " >Please select your Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Male">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+      </div>
+    
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Phone</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input name="phone" placeholder="(000)000-0000" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Address</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="address" placeholder="Address" class="form-control" type="text">
+          </div>
+        </div>
+      </div> 
+      
+      <!-- CITY SELECTION-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">City</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="city" placeholder="city" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+      <!-- STATE SELECTION -->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">State(Write N/A if not applicable)</label>
+        <div class="col-md-6 selectContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+           <input type="text" name="state" placeholder="State" class="form-control" >
+          </div>
+        </div>
+      </div>
+
+      <!-- COUNTRY SELECTION -->
+
+      <div class="form-group">
+              <label class="col-md-4 control-label">Country</label>
+              <div class="col-md-6 selectContainer">
+                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                  <select name="country" class="form-control selectpicker" >
+                    <option value=" " >Please select your Country</option>
+                    <option>Afghanistan</option>
+                    <option>Albenia</option>
+                    <option >Argentina</option>
+                    <option >Australia</option>
+                    <option >Austria</option>
+                    <option >Bangladesh</option>
+                    <option >Bahrein</option>
+                    <option >Barbados</option>
+                    <option >Brasil</option>
+                    <option> Bhutan</option>
+                    <option >Bolivia</option>
+                    <option >Combodia</option>
+                    <option >Canada</option>
+                    <option >Central Africa Republic</option>
+                    <option >Chad</option>
+                    <option >Croatia</option>
+                    <option> Denmark</option>
+                    <option >Dominica</option>
+                    <option >Ecuador</option>
+                    <option>Egypt</option>
+                    <option >Estonia</option>
+                    <option>Fiji</option>
+                    <option >Finland</option>
+                    <option >France</option>
+                    <option>Gabon</option>
+                    <option>Georgia</option>
+                    <option>Germany</option>
+                    <option>Granada</option>
+                    <option>Haiti</option>
+                    <option>Honduras</option>
+                    <option>Iceland</option>
+                    <option>India</option>
+                    <option>Indonesia</option>
+                    <option>Iraq</option>
+                    <option>Iran</option>
+                    <option>Israel</option>
+                    <option>Jamaica</option>
+                    <option>Japan</option>
+                    <option>Jordan</option>
+                    <option>Kenya</option>
+                    <option>Keribati</option>
+                    <option>Kosovo</option>
+                    <option>Kuwait</option>
+                    <option>Laos</option>
+                    <option>Latvia</option>
+                    <option>Malaysia</option>
+                    <option>Malta</option>
+                    <option >Mexico</option>
+                    <option >Namibia</option>
+                    <option >Netherlands</option>
+                    <option >New Zealand</option>
+                    <option >Nigeria</option>
+                    <option >Norway</option>
+                    <option >Oman</option>
+                    <option >Pakistan</option>
+                    <option >Panama</option>
+                    <option >Peru</option>
+                    <option >Poland</option>
+                    <option >Portugal</option>
+                    <option >Qatar</option>
+                    <option >Romania</option>
+                    <option >Russia</option>
+                    <option >Saint Lucia</option>
+                    <option >Saudi Arabia</option>
+                    <option >Serbia</option>
+                    <option >Singapore</option>
+                    <option >Spain</option>
+                    <option >Sri-Lanka</option>
+                    <option >Sudan</option>
+                    <option >Sweden</option>
+                    <option >Taiwan</option>
+                    <option >Turkey</option>
+                    <option >Uganda</option>
+                    <option >Uruguay</option>
+                    <option >Venezuela</option>
+                    <option >Vietnam</option>
+                    <option >Yemen</option>
+                    <option >Zambia</option>
+                    <option >Zimbabwe</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+
+      
+      <!-- ZIP CODE SELECTION-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Zip Code</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+        <!-- Text area -->
+      
+      <!--<div class="form-group">
+        <label class="col-md-4 control-label">About </label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <textarea class="form-control" name="comment" placeholder="About "></textarea>
+          </div>
+        </div>
+      </div> -->
+      
+     
+       </fieldset>
+       	<legend> Account information </legend>
+        <fieldset>
+        <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label">E-Mail</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      
+    
+        <div class="form-group has-feedback">
+            <label for="password"  class="col-md-4 control-label">Password</label>
+                <div class="col-md-6  inputGroupContainer">
+                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input class="form-control" id="userPw" type="password" placeholder="password" 
+                       name="password" data-minLength="5"
+                       data-error="some error"
+                       required/>
+                <span class="glyphicon form-control-feedback"></span>
+                <span class="help-block with-errors"></span>
+                </div>
+             </div>
+        </div>
+     
+        <div class="form-group has-feedback">
+            <label for="confirmPassword"  class="col-md-4 control-label">
+                   Confirm Password
+                </label>
+                 <div class="col-md-6  inputGroupContainer">
+                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input class="form-control {$borderColor}" id="userPw2" type="password" placeholder="Confirm password" 
+                       name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
+                       data-match-error="some error 2"
+                       required/>
+                <span class="glyphicon form-control-feedback"></span>
+                <span class="help-block with-errors"></span>
+      			 </div>
+             </div>
+        </div>
+     
+  
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4">
+          <button type="submit" value = "submit" class="btn btn-warning" ><a href="login.html">Send</a><span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+ 
+</div>
+ 
+<!-- PrefixFree -->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+ 
+        <script src="js/index.js"></script>
+<script type="text/javascript">
+ 
+   $(document).ready(function() {
+    $('#reg_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            first_name: {
+                validators: {
+                        stringLength: {
+                        min: 2,
+                    },
+                        notEmpty: {
+                        message: 'Please supply your first name'
+                    }
+                }
+            },
+             last_name: {
+                validators: {
+                     stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your last name'
+                    }
+                }
+            },
+           
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your phone number'
+                    },
+                    phone: {
+                        country: 'US',
+                        message: 'Please supply a vaild phone number with area code'
+                    }
+                }
+            },
+            address: {
+                validators: {
+                     stringLength: {
+                        min: 8,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your street address'
+                    }
+                }
+            },
+            city: {
+                validators: {
+                     stringLength: {
+                        min: 4,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your city'
+                    }
+                }
+            },
+            state: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your state'
+                    }
+                }
+            },
+            zip: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your zip code'
+                    },
+                    zipCode: {
+                        country: 'US',
+                        message: 'Please supply a vaild zip code'
+                    }
+                }
+            },
+		comment: {
+                validators: {
+                      stringLength: {
+                        min: 10,
+                        max: 200,
+                        message:'Please enter at least 10 characters and no more than 200'
+                    },
+                    notEmpty: {
+                        message: 'Please supply a description about yourself'
+                    }
+                    }
+                 },	
+	 email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your email address'
+                    },
+                    emailAddress: {
+                        message: 'Please supply a valid email address'
+                    }
+                }
+            },
+					
+	password: {
+            validators: {
+                identical: {
+                    field: 'confirmPassword',
+                    message: 'Confirm your password below - type same password please'
+                }
+            }
+        },
+        confirmPassword: {
+            validators: {
+                identical: {
+                    field: 'password',
+                    message: 'The password and its confirm are not the same'
+                }
+            }
+         },
+			
+            
+            }
+        })
+		
+ 	
+        .on('success.form.bv', function(e) {
+            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                $('#reg_form').data('bootstrapValidator').resetForm();
+ 
+            // Prevent form submission
+            e.preventDefault();
+ 
+            // Get the form instance
+            var $form = $(e.target);
+ 
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+ 
+            // Use Ajax to submit form data
+            $.post($form.attr('action'), $form.serialize(), function(result) {
+                console.log(result);
+            }, 'json');
+        });
+});
+ 
+ 
+ 
+ </script>
+    
+    </div>
+ 
+          
+            
+      </div>
+      
+    </div>
+ 
+  </div>
+ 
+</div>
+ 
+</body>
+</html>
